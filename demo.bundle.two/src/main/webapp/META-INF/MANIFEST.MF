@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Import-Bundle: com.springsource.org.apache.taglibs.standard;version="[
+ 1.1.2,1.3)"
+Bundle-ClassPath: .,WEB-INF/classes,images,styles
+Bundle-Version: 3.0.0
+Tool: Bundlor 1.1.2.RELEASE
+Bundle-Name: Configuration Sample Web Bundle
+Bundle-ManifestVersion: 2
+Import-Package: org.eclipse.virgo.samples.configuration.properties.cor
+ e;version="[3.0.0,4.0.0)",org.eclipse.virgo.web.dm;version="[3.0.0,4.
+ 0.0)",org.springframework.beans.factory.annotation;version="[3.0,4.0)
+ ",org.springframework.beans.factory.xml;version="[3.0,4.0)",org.sprin
+ gframework.context.config;version="[3.0,4.0)",org.springframework.con
+ text.support;version="[3.0,4.0)",org.springframework.stereotype;versi
+ on="[3.0,4.0)",org.springframework.web.bind.annotation;version="[3.0,
+ 4.0)",org.springframework.web.context;version="[3.0,4.0)",org.springf
+ ramework.web.context.support;version="[3.0,4.0)",org.springframework.
+ web.servlet;version="[3.0,4.0)",org.springframework.web.servlet.confi
+ g;version="[3.0,4.0)",org.springframework.web.servlet.handler;version
+ ="[3.0,4.0)",org.springframework.web.servlet.mvc;version="[3.0,4.0)",
+ org.springframework.web.servlet.mvc.annotation;version="[3.0,4.0)",or
+ g.springframework.web.servlet.support;version="[3.0,4.0)",org.springf
+ ramework.web.servlet.view;version="[3.0,4.0)"
+Bundle-SymbolicName: org.eclipse.virgo.samples.configuration.propertie
+ s.web
+Web-ContextPath: config-properties
+

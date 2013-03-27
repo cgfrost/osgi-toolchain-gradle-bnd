@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-Name: Configuration Sample Content Bundle
+Bundle-Description: Configuration Sample Content Provider
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.eclipse.virgo.samples.configuration.properties.core
+Bundle-Version: 3.0.0
+Import-Template: 
+ javax.management.*;version="0",
+ org.springframework.*;version="[3.0,3.1)",
+ org.osgi.framework.*;version="0",
+ org.osgi.service.cm.*;version="0"
+Excluded-Imports: 
+ org.junit,
+ org.eclipse.virgo.samples.configuration.*

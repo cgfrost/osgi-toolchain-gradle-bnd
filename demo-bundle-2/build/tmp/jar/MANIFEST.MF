@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Export-Package: net.codersbrew;uses:="org.osgi.framework"
+Built-By: 1.2
+Bundle-Version: 1.0.0
+Tool: Bnd-1.50.0
+Bundle-Name: Demo Bundle 2
+Bnd-LastModified: 1364245300000
+Bundle-Activator: net.codersbrew.MyActivator
+Created-By: 1.6.0_43 (Apple Inc.)
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: gradle-ivy.demo-bundle-2
+Import-Package: org.osgi.framework;version="[1.6,2)"
+

@@ -1,0 +1,38 @@
+group = 'demo-build-gradle'
+version = '1.0'
+
+subprojects {
+
+	apply plugin: 'java'
+	apply plugin: 'osgi'
+
+	repositories {
+	    ivy{
+	        artifactPattern "http://repository.springsource.com/ivy/bundles/release/[organisation]/[module]/[revision]/[artifact]-[revision].[ext]"
+	        artifactPattern "http://repository.springsource.com/ivy/bundles/external/[organisation]/[module]/[revision]/[artifact]-[revision].[ext]"
+	        ivyPattern "http://repository.springsource.com/ivy/bundles/release/[organisation]/[module]/[revision]/[artifact]-[revision].[ext]"
+	        ivyPattern "http://repository.springsource.com/ivy/bundles/external/[organisation]/[module]/[revision]/[artifact]-[revision].[ext]"
+	    }
+	}
+
+    dependencies {
+        compile group: 'org.eclipse.osgi', name: 'org.eclipse.osgi', version: '3.7.1.R37x_v20110808-1106', configuration: 'runtime', ext: 'jar'
+        testCompile group: 'org.junit', name: 'com.springsource.org.junit', version: '4.8.2', configuration: 'runtime', ext: 'jar'
+    }
+
+	task sourcesJar(type: Jar, dependsOn: classes) {
+    	classifier = 'sources'
+		from sourceSets.main.allSource
+	}
+
+	task javadocJar(type: Jar, dependsOn: javadoc) {
+	    classifier = 'javadoc'
+	    from javadoc.destinationDir
+	}
+	
+	artifacts {
+	    archives sourcesJar
+	    archives javadocJar
+	}
+
+}

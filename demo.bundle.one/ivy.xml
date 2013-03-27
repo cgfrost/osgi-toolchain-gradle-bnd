@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://ivyrep.jayasoft.org/ivy-doc.xsl"?>
+<ivy-module
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="http://incubator.apache.org/ivy/schemas/ivy.xsd"
+		version="1.3">
+
+	<info organisation="org.eclipse.virgo.samples" module="${ant.project.name}"/>
+
+	<configurations>
+		<include file="${virgo.build.dir}/common/default-ivy-configurations.xml"/>
+	</configurations>
+
+	<publications>
+		<artifact name="${ant.project.name}"/>
+		<artifact name="${ant.project.name}-sources" type="src" ext="jar"/>
+	</publications>
+
+	<dependencies>
+		<!-- === PROVIDED-COMPILE============================================ -->
+
+		<!-- === RUNTIME-DEFAULT =========================================== -->
+
+		<!-- === PROVIDED-RUNTIME =========================================== -->
+		<dependency org="org.eclipse.virgo.mirrored" name="org.eclipse.osgi" rev="${org.eclipse.osgi}" conf="provided->runtime"/>
+		<dependency org="org.eclipse.virgo.mirrored" name="org.eclipse.equinox.cm" rev="${org.eclipse.equinox.cm}" conf='provided->runtime'/>
+		<dependency org="org.springframework" name="org.springframework.core" rev="${org.springframework}" conf="provided->runtime"/>
+		<dependency org="org.springframework" name="org.springframework.context" rev="${org.springframework}" conf="provided->runtime"/>
+		<dependency org="org.springframework" name="org.springframework.beans" rev="${org.springframework}" conf="provided->runtime"/>
+		<!-- === TEST ====================================================== -->
+		<dependency org="org.junit" name="com.springsource.org.junit" rev="${org.junit}" conf="test->runtime"/>
+		<dependency org="org.eclipse.virgo.test" name="org.eclipse.virgo.test.stubs" rev="${org.eclipse.virgo.test}" conf="test->runtime"/>
+		
+	</dependencies>
+
+</ivy-module>
