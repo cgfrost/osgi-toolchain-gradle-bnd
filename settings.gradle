@@ -1,2 +1,2 @@
 
-include "demo-bundle-1", "demo-bundle-2"
+include "demo.bundle.one", "demo.bundle.two"

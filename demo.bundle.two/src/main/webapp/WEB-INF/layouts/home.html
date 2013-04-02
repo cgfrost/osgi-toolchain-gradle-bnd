@@ -1,0 +1,16 @@
+
+<!--@&header@-->
+	
+	<h1>Properties</h1>
+	
+	<script type="text/javascript">
+		var props = "<!--@<properties@-->";
+		var propsArray = props.split(',');
+		document.write("<ul>");
+		for (var i=0; i<propsArray.length; i=i+2){
+			document.write("<li>" + propsArray[i] + " - " + propsArray[i+1] + "</li>");
+		}
+		document.write("</ul>");
+	</script>
+	
+<!--@&footer@-->

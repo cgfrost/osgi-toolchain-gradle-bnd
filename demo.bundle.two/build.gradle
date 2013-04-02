@@ -1,0 +1,17 @@
+
+
+
+dependencies {
+	compile group: 'org.eclipse.osgi', name: 'org.eclipse.osgi', version: '3.7.1.R37x_v20110808-1106', configuration: 'runtime', ext: 'jar'
+}
+
+jar {
+    manifest {
+        version = '1.0.0'
+        name = 'Demo Bundle 2'
+        instruction 'Bundle-Activator', 'net.codersbrew.gradle.demo.bundle.two.Activator'
+        instruction 'Import-Package', '*'
+        instruction 'Export-Package', '*'
+        attributes( 'Built-By': gradle.gradleVersion )
+    }
+}

@@ -1,0 +1,17 @@
+@import "common.css";
+
+/* 
+ * Virgo Admin Console
+ *
+ * Styles for the overview page
+ *
+ * Christopher Frost - 2011
+ */
+
+#content ul, #content table {
+	margin-left: 20px;
+}
+
+#content li {
+	list-style: disc inside none;
+}

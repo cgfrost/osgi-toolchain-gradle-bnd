@@ -1,0 +1,224 @@
+/* 
+ * Virgo Admin Console
+ *
+ * Styles for the error page
+ *
+ * Christopher Frost - 2011
+ */
+ 
+body {
+	font: 12px Helvetica, Arial, "Bitstream Vera Sans", sans-serif;
+	background-color: #dfdfdf;
+}
+
+#page {
+    color: #333333;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 700px;
+}
+
+/*
+ * TEXT FORMATTING STYLES
+ */
+h1 {
+	font-size: 1.4em;
+	padding: 12px 0 5px 0;
+	line-height: 125%;
+	color: #002E62;
+	text-align: center;
+	border-bottom: 1px solid #BAD9EC;
+}
+
+h2 {
+	font-size: 1.2em;
+	padding: 10px 0 2px 0;
+	color: #002E62;
+}
+
+/*
+ * LINK STYLES
+ */
+ 
+a:link, a:visited {
+	color: #333;
+	text-decoration: underline;
+}
+
+a:hover, a:focus {
+	color: #0093CF;
+	text-decoration: underline;
+}
+
+a:active, a.active { 
+	color: #0093CF;
+}
+  
+/*
+ * MENU STYLES
+ */
+#primary-navigation {
+	background: #fff url(../images/menu-stretch.png) repeat-x scroll 0 0;
+	height:29px;
+	margin:0;
+	padding:0;
+	position: relative;
+}
+
+#primary-left {
+	background: #002E62;
+	float: left;
+	height: 26px;
+	line-height: normal;
+	padding: 3px 0 0;
+	position: relative;
+}
+
+#primary-right {
+	background: #002E62;
+	float: right;
+	height: 26px;
+	line-height: normal;
+	padding: 3px 0 0;
+	position: relative;
+}
+
+#primary-left ul, #primary-right ul {
+	padding: 0 4px 0 4px;
+	margin: 2px 0 0 0;
+	list-style: none;
+}
+
+#primary-left li, #primary-right li {
+	display: inline;
+}
+
+#primary-left a, #primary-right a {
+	color: #ffffff;
+	display: block;
+	float: left;
+	font-weight:normal;
+	margin: 0 1px 0 1px;
+	padding: 7px 8px 4px 10px;
+	text-decoration: none;
+}
+
+#primary-left a:hover, #primary-right a:hover, .selected-menu {
+	background: #ffffff;
+	color:#002E62;
+	text-decoration: none;
+}
+
+#left-cap {
+	background: transparent url(../images/menu-curve-left.png) no-repeat top left;
+	height: 29px;
+	width: 30px;
+	float: left;
+}
+
+#right-cap {
+	background: transparent url(../images/menu-curve-right.png) no-repeat top right;
+	height: 29px;
+	width: 30px;
+	float: right;
+}
+
+/*
+ * CONTAINER STYLES
+ */
+#content-no-nav {
+	display: block;
+	margin: 0px 22px 20px 22px;
+	padding: 0;
+}
+ 
+#container {
+	margin: 0;
+	padding-bottom: 20px;
+	height: 400px;
+	overflow:hidden;
+	background:#fff;
+}
+
+/*
+ * FOOTER STYLES
+ */
+#footer-wrapper {
+	clear: both;
+	margin: 0;
+	background-image: url(../images/footer-stretch.png);
+	background-repeat: repeat-x;
+	height: 29px;
+	width: 100%;
+}
+
+#footer-left, #footer-right {
+	margin: 0;
+	font-size: 85%;
+	padding: 1em;
+	height: 29px;
+    color: #bbb;
+}
+
+#footer-left {
+	text-align: left;
+	background-image: url(../images/footer-left.png);
+	background-repeat: no-repeat;
+	position: relative;
+	left: 0;
+	float: left;
+}
+
+#footer-right {
+	text-align: right;
+	background-image: url(../images/footer-right.png);
+	background-repeat: no-repeat;
+	background-position: top right;
+	position: relative;
+	right: 0;
+	float: right;
+}
+
+#footer-left a, #footer-right a {
+    color: #999;
+    text-decoration:none;
+}
+
+/* 
+ *  Local style information for the Virgo Splash Screen
+ *
+ *  Contains both style and colour information and 
+ *  overrides content from the dojo/tundra style.
+ *
+ *  Christopher Frost - March 2010
+ *
+ */
+ 
+#mini-header, #mini-header-left, #mini-header-right {
+	height: 7px;
+	width: 7px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#mini-header {
+	width: 100%;
+	background-color: #002e62; 
+}
+
+#mini-header-left {
+	background-image: url(../images/mini-header-left.png); 
+	background-repeat: no-repeat; 
+	background-position: left top;
+	float: left;
+}
+
+#mini-header-right {
+	background-image: url(../images/mini-header-right.png); 
+	background-repeat: no-repeat scroll; 
+	background-position: right top;
+	float: right;
+}
+
+ 

@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Export-Package: net.codersbrew.gradle.demo.bundle.one;uses:="org.osgi.
+ framework,net.codersbrew.gradle.demo.bundle.one.internal",net.codersb
+ rew.gradle.demo.bundle.one.internal;uses:="net.codersbrew.gradle.demo
+ .bundle.one,org.osgi.framework"
+Built-By: 1.2
+Bundle-Version: 1.0.0
+Tool: Bnd-1.50.0
+Bundle-Name: Demo Bundle 1
+Bnd-LastModified: 1364753353000
+Bundle-Activator: net.codersbrew.gradle.demo.bundle.one.Activator
+Created-By: 1.6.0_43 (Apple Inc.)
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: osgi-toolchain-gradle-bnd.demo.bundle.one
+Import-Package: org.osgi.framework;version="[1.6,2)"
+
